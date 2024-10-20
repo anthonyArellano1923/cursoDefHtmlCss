@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body, html{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+        }
+
+        main, .class12-form {
+            width: 100%;
+            height: 100%;
+        }
+
+        .class12-form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .class12-form form {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            background-color: rgb(180, 118, 238);
+            border-radius: 20px;
+            padding: 12px;
+        }
+
+
+        .class12-form form label{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .class12-form form label input{
+            width: 50%;
+        }
+
+        .class12-form form label:nth-child(3){
+            margin-bottom: 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <secection class="class12-form">
+            <form action="">
+                <label for="name">
+                    <span>Tu nombre</span>
+                    <input type="text" id="name" placeholder="Pedro Perez">
+                </label>
+                <label for="birthdate">
+                    <span>Feha de nacimiento</span>
+                    <input type="date" id="birthdate">
+                </label>
+                <label for="cellphone">
+                    <span>Celular de contacto</span>
+                    <input type="text" id="cellphone" placeholder="974169387">
+                </label>
+            </form>
+        </secection>
+    </main>
+</body>
+</html>
