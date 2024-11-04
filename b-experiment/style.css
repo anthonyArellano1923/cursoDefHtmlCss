@@ -1,0 +1,93 @@
+:root {
+    --aside-width: 250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main, header, footer {
+    font-size: 1.3rem;
+}
+
+/* #############   Header   ############### */
+
+header {
+    height: 7vh;
+    background-color: #303F9F;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.header-nav, 
+.footer-options {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-nav li a,
+.footer-options li a {
+    color: whitesmoke; 
+    text-decoration: none;   
+    margin: 10px;
+}
+
+
+/* ###########   Main content   ############# */
+
+
+main {
+    height: 89vh;
+    background-color: #3F51B5;
+    display: flex;
+}
+
+.aside-content {
+    background-color: #607D8B;
+    height: 100%;
+    width: var(--aside-width);
+}
+
+.aside-content__rectangle {
+    height: 160px;
+    width: calc(var(--aside-width) - 20px);
+    background-color: #C5CAE9;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.main-content {
+    width: calc(100% - var(--aside-width));
+}
+
+.main-content p {
+    text-align: justify;
+    margin-top: 24px;
+}
+
+
+/* ###########   Main content   ############# */
+
+
+footer {
+    height: 4vh;
+    background-color: #757575;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+
+footer p {
+    color: white;
+    display: inline-block;
+}
