@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header, footer {
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    height: 7vh;
+}
+
+main {
+    display: flex;
+    height: 86vh;
+}
+
+aside {
+    background-color: mediumseagreen;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 20rem;
+}
+
+article {
+    width: calc(100% - 20rem);
+    height: 100%;
+    display: flex;
+    align-items: end;
+    text-align: center;
+    justify-content: space-between;
+    background-color: darkgoldenrod;
+
+}
+
+article figure {
+    width: 30%;
+    height: 35%;
+    background-color: goldenrod;
+    margin: auto 1rem 1rem;
+}

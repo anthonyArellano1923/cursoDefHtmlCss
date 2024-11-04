@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    height: 7vh;
+    background-color: coral;
+}
+
+main {
+    display: flex;
+    height: 86vh;
+}
+
+nav, article, aside {
+    height: 100%;
+    border: 0.1rem solid black;
+    padding: 0.5rem;
+}
+
+nav, aside {
+    background-color: darkslategrey;
+    width: 20rem;
+}
+
+article {
+    background-color: darkred;
+    width: calc(100% - 40rem);
+}
+
+footer {
+    height: 7vh;
+    background-color: coral;
+}
+
+@media (max-width: 640px) {
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        height: 86%;
+        width: 100%;
+    }
+
+    aside, nav {
+        order: 1;
+        height: 7%;
+        width: 100%;
+    }
+}
