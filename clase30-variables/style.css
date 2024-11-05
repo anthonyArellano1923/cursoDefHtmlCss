@@ -1,0 +1,44 @@
+:root {
+    --primary-color: darkmagenta;
+    --secondary-color: darkorchid;
+    --full-width: 100vw;
+    --title-font: 4rem;
+    --pa-font: 1.8rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    height: 15vh;
+    width: var(--full-width);
+    background-color: var(--primary-color);
+}
+
+main {
+    height: 70vh;
+    width: var(--full-width);
+}
+
+h1 {
+    font-size: var(--title-font);
+    color: var(--primary-color);
+}
+
+p {
+    font-size: var(--pa-font);
+    text-align: justify;
+}
+
+footer {
+    height: 15vh;
+    width: var(--full-width);
+    background-color:darkorchid ;
+}
