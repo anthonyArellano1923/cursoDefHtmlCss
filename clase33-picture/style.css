@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bad-practices__picture {
+    width: 50rem;
+    height: 40rem;
+    overflow: hidden;
+}
+
+.bad-practice-img,
+.good-practice-img {
+    width: 100%;
+    object-fit: cover;
+
+}

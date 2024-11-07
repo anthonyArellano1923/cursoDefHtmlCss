@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section class="bad-practices">
+            <div class="bad-practices__picture">
+                <img src="./assets/large.jpg" alt="bad-practice-img" class="bad-practices__picture-img">
+            </div>
+        </section>
+        <section class="good-practices">
+            <picture>
+                <source media="(min-width: 1600px)" srcset="./assets/large.jpg">
+                <source media="(min-width: 1000px)" srcset="./assets/medium.jpg">
+                <img class="good-practice-img" src="./assets/small.jpg" alt="im-a-picture">
+            </picture>
+        </section>
+        
+    </main>
+    
+</body>
+</html>
